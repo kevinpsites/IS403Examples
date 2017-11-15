@@ -1,0 +1,16 @@
+﻿@model CarsRUs.Models.CarsOwner
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Car Details</h2>
+
+@Html.DisplayFor( model => model.cars.carID),  @Html.DisplayFor(model => model.cars.carName) is owned by
+<br />
+
+@Html.DisplayFor(model => model.cars.ownerID)<br />
+
+@Html.DisplayFor(model => model.owner.ownerFirstName) @Html.DisplayFor(model => model.owner.ownerLastName)
+
+
